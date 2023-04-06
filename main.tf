@@ -1,3 +1,12 @@
+# TASK:
+# Write an infrastructure deployment automation script using a selected Terraform technology on the AWS platform.
+# The task is meant to simulate a real scenario where developers created a node.js HTTP service/app which requires a relational database to work and needs to be accessible from the internet. 
+
+# Some components which the infrastructure should include:
+# -A load balancer.
+# -At least one server instance responds to HTTP requests made to the load balancer created in point 1. (It would be nice if as part of point 2. you would deploy a real HTTP server e.g. nginx, apache with a default configuration that responds to requests.).
+# -A relational database to which we can connect from the server instances created in point 2. (To simulate a real-life scenario where backend code connects to the database).
+
 # Define the provider and the region
 provider "aws" {
   region = "eu-central-1"
